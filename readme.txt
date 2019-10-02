@@ -6,3 +6,4 @@ https://www.udemy.com/course/build-an-app-with-aspnet-core-and-angular-from-scra
 Command
 - dotnet run
 - dotnet watch run
+- test
