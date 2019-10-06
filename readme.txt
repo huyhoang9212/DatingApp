@@ -17,4 +17,16 @@ Entity Framework core
 Angular
 - npm install -g @angular/cli
 - ng new DatingApp-SPA
+- ng serve
+Angular extentions:
+- angular snippets
+- angular files
+- angular language
+- auto rename tag
+- bracket pair colorizer
+- debug for Chrome
+- material ui theme
+- prettier - code formater
+- tslint
+- angular2-switcher
 
