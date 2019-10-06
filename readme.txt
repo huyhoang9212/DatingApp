@@ -17,3 +17,4 @@ Entity Framework core
 Angular
 - npm install -g @angular/cli
 - ng new DatingApp-SPA
+
