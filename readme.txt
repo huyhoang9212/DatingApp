@@ -18,6 +18,7 @@ Angular
 - npm install -g @angular/cli
 - ng new DatingApp-SPA
 - ng serve
+
 Angular extentions:
 - angular snippets
 - angular files
@@ -30,3 +31,8 @@ Angular extentions:
 - tslint
 - angular2-switcher
 
+BootStrap
+- npm install bootstrap font-awesome
+
+GIT
+- git init
