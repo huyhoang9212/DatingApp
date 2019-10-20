@@ -3,9 +3,10 @@ The original course from udemy
 
 https://www.udemy.com/course/build-an-app-with-aspnet-core-and-angular-from-scratch/learn/lecture/8706340#content
 
-Command
+DotNet
 - dotnet run
 - dotnet watch run
+- dotnet user-secrets
 
 Entity Framework core
 - https://devblogs.microsoft.com/dotnet/announcing-ef-core-3-0-and-ef-6-3-general-availability/
@@ -36,3 +37,7 @@ BootStrap
 
 GIT
 - git init
+- git rm appsettings.json --cached
+
+JWT
+- jwt.io

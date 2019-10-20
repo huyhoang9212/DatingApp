@@ -19,12 +19,15 @@ namespace DatingApp.API.Data
     public class AuthRepository : IAuthRepository
     {
         private readonly DataContext _dataContext;
+        
         public AuthRepository(DataContext dataContext)
         {
             _dataContext = dataContext;
         }
+
         public async Task<User> Register(User user, string password)
         {
+            // validation here???
             byte[] passwordHash, passwordSalt;
             CreatePasswordHash(password, out passwordHash, out passwordSalt);
             user.PasswordHash = passwordHash;
@@ -51,6 +54,7 @@ namespace DatingApp.API.Data
             if(user == null) return null;
 
             if(!VerifyPassword(user, password)) return null;
+            
             return user;
         }
 
@@ -71,9 +75,10 @@ namespace DatingApp.API.Data
             return true;
         }
 
-        Task<bool> IAuthRepository.UserExists(string username)
+        public async Task<bool> UserExists(string username)
         {
-            throw new System.NotImplementedException();
+            var userExists = await _dataContext.Users.AnyAsync(x => x.Username == username);
+            return userExists;
         }
     }
 }
