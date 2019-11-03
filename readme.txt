@@ -20,10 +20,13 @@ Angular
 - ng new DatingApp-SPA
 - ng serve
 
-Angular third party
+Angular 3rd party
 - npm install alertifyjs
-- angular2-jwt : https://github.com/auth0/angular2-jwt
-- npm install @auth0/angular-jwt
+- angular2-jwt : https://github.com/auth0/angular2-jwt  npm install @auth0/angular-jwt
+- ngx-bootstrap https://valor-software.com/ngx-bootstrap/#/documentation#getting-started
+  npm install ngx-bootstrap --save
+  npm install ngx-bootstrap@3.0.1 --save
+
 
 Angular extentions:
 - angular snippets
