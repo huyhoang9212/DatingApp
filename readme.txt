@@ -20,6 +20,11 @@ Angular
 - ng new DatingApp-SPA
 - ng serve
 
+Angular third party
+- npm install alertifyjs
+- angular2-jwt : https://github.com/auth0/angular2-jwt
+- npm install @auth0/angular-jwt
+
 Angular extentions:
 - angular snippets
 - angular files
