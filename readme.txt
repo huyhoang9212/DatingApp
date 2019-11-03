@@ -26,7 +26,7 @@ Angular 3rd party
 - ngx-bootstrap https://valor-software.com/ngx-bootstrap/#/documentation#getting-started
   npm install ngx-bootstrap --save
   npm install ngx-bootstrap@3.0.1 --save
-
+- bootswatch : https://bootswatch.com/help/
 
 Angular extentions:
 - angular snippets
