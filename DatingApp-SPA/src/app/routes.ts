@@ -7,9 +7,16 @@ import { AuthGuard } from './_guards/auth.guard';
 
 // tslint:disable-next-line: class-name
 export const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'members', component: MemberListComponent },
-  { path: 'messages', component: MessagesComponent },
-  { path: 'lists', component: ListsComponent, canActivate: [AuthGuard] },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' }
+  { path: '', component: HomeComponent },
+  {
+    path: '',
+    runGuardsAndResolvers: 'always',
+    canActivate: [AuthGuard],
+    children: [
+      { path: 'members', component: MemberListComponent },
+      { path: 'messages', component: MessagesComponent },
+      { path: 'lists', component: ListsComponent }
+    ]
+  },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
