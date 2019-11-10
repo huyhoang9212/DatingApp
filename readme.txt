@@ -13,7 +13,10 @@ Entity Framework core
 - dotnet tool install --global dotnet-ef version 3.0.0
 - dotnet ef migrations add InitialCreate
 - dotnet ef database update
+- dotnet ef migrations remove
 
+Json Generator
+- https://www.json-generator.com/
 
 Angular
 - npm install -g @angular/cli
